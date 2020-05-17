@@ -1,26 +1,22 @@
-/*header*/
-body {
+html,
+body,
+section,
+.home,
+.overlay {
+  height: 100%;
+  width: 100%;
   margin: 0;
 }
-header {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-transform: uppercase;
-}
-.bac {
+.home {
   width: 100%;
   height: 100%;
   background: url(images/cover.jpg);
   background-color: #222;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 10%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  background-position: center 5%;
 }
-.header-overlay {
+.overlay {
   background-color: rgba(44, 62, 80, 0.3);
   background-image: url(images/pattern.png);
   background-repeat: repeat;
@@ -29,36 +25,79 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
 }
+
+/*header*/
+
+header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  height: 50px;
+}
+
 /*navbar*/
-.test {
-  position: absolute;
-  width: 100%;
-  top: 10px;
-  left: 0;
-  text-align: center;
-}
+
 .navbar-list {
-  margin: 0;
+  width: 564px;
+  margin: 0 auto;
   padding: 0;
-  text-align: right;
 }
 .navbar-item {
   display: inline-block;
   padding-left: 20px;
   line-height: 21px;
   font-weight: 500;
-  text-align: left;
 }
-
 .navbar-info {
   font-size: 10px;
   color: #c4bfbf;
 }
-
 .navbar-link {
   font-size: 15px;
-  color: #ffffff;
+  color: black;
   text-decoration: none;
 }
-/*logo*/
+
+/*intro*/
+
+.introduction {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+.title {
+  margin: 0;
+  padding: 0;
+  width: 6ch;
+  position: relative;
+  z-index: 1000;
+  color: white;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid orange;
+  animation: flashing-border 0.75s step-end infinite, printed-text 5s steps(6);
+}
+
+@keyframes flashing-border {
+  0% {
+    border-color: orange;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: orange;
+  }
+}
+@keyframes printed-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 6ch;
+  }
+}
