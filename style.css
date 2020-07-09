@@ -23,69 +23,8 @@ body,
   background-repeat: repeat;
 }
 
-/*header*/
-
-header {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-transform: uppercase;
-  width: 100%;
-  height: 50px;
-  position: absolute;
-  top: 0;
-  margin-top: 30px;
-  text-align: center;
-}
-
-/*navbar*/
-
-/*.navbar-list {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
-.navbar-item {
-  display: inline-block;
-  padding-left: 20px;
-  line-height: 21px;
-  font-weight: 500;
-  text-align: left;
-}
-.navbar-info {
-  font-size: 18px;
-  color: #ffffff;
-}
-.navbar-link {
-  font-size: 15px;
-  color: rgb(85, 79, 79);
-  text-decoration: none;
-}
-*/
-.main {
-  width: 520px;
-  height: 518px;
-  background-color: white;
-  border-radius: 3px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.face {
-  width: 144px;
-  height: 144px;
-  border-radius: 50%;
-  display: block;
-  margin: 10px auto;
-}
-h1 {
-  font-size: 1.17em;
-  text-align: center;
-}
 /*intro*/
-/*
+
 .introduction {
   position: absolute;
   width: 100%;
@@ -97,7 +36,7 @@ h1 {
 .title {
   margin: 0 auto;
   padding: 0;
-  width: 35ch;
+  width: 31ch;
   position: relative;
   z-index: 1000;
   color: white;
@@ -106,7 +45,7 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
   border-right: 4px solid white;
-  animation: flashing-border 0.75s step-end infinite, printed-text 5s steps(35);
+  animation: flashing-border 0.75s step-end infinite, printed-text 5s steps(31);
 }
 
 @keyframes flashing-border {
@@ -125,6 +64,41 @@ h1 {
     width: 0;
   }
   to {
-    width: 35ch;
+    width: 31ch;
   }
-}*/
+}
+
+/*header*/
+
+header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+/*navbar*/
+
+.navbar-list {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.navbar-item {
+  display: inline-block;
+  padding-left: 20px;
+  line-height: 21px;
+  font-weight: 500;
+  text-align: left;
+}
+.navbar-info {
+  font-size: 13px;
+  color: #000000;
+}
+.navbar-link {
+  font-size: 10px;
+  color: rgb(85, 79, 79);
+  text-decoration: none;
+}
